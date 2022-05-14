@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'Native_project' do
+  
+  use_frameworks!
+  pod 'Flutter',:podspec => 'Debug/Flutter.podspec'
+  
+
+  target 'Native_projectTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Native_projectUITests' do
+    # Pods for testing
+  end
+
+end
