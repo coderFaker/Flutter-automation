@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-
+#import <Flutter/Flutter.h>
 @interface ViewController ()
 
 @end
@@ -16,6 +16,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)pushFlutter:(id)sender {
+    [self presentViewController:[[FlutterViewController alloc] init] animated:YES completion:nil];
 }
 
 

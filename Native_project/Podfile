@@ -1,0 +1,22 @@
+
+flutter_application_path = '../flutter_module'
+load File.join(flutter_application_path,'.iOS','Flutter','podhelper.rb')
+
+
+platform :ios, '9.0'
+target 'Native_project' do
+  
+  install_all_flutter_pods(flutter_application_path)
+  use_frameworks!
+
+
+  target 'Native_projectTests' do
+    inherit! :search_paths
+    
+  end
+
+  target 'Native_projectUITests' do
+    
+  end
+
+end
